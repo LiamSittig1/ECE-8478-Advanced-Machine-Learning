@@ -224,3 +224,6 @@ data/
 
 #Trained model weights (large binary files; regenerate by running the notebook)
 Pytorch Onboarding/results/deep_cnn_full.pt
+
+#Private notes (not for the public repo)
+Pytorch Onboarding/Report_Notes.md
