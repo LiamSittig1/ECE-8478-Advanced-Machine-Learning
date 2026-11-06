@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#Data (no leading/middle slash, so this matches a data/ folder at any depth, e.g. "Pytorch Onboarding/data/")
+data/
+
+#Trained model weights (large binary files; regenerate by running the notebook)
+Pytorch Onboarding/results/deep_cnn_full.pt
