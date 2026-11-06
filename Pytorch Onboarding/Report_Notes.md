@@ -108,7 +108,7 @@ Flatten                     → 4096
 Dropout(0.5) → Linear(4096, 512) → ReLU → Dropout(0.5) → Linear(512, 10)
 ```
 
-- **Parameters:** 3,249,098. That's 1,146,304 in the conv and BatchNorm layers and 2,102,794 in the classifier.
+- **Parameters:** 3,249,098. That's 1,145,408 in the conv and BatchNorm layers and 2,102,794 in the classifier.
 
 **Results**
 

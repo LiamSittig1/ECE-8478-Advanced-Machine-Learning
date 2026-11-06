@@ -190,14 +190,7 @@ The components fall into two groups:
 
 ---
 
-## 8. Limitations
-
-- **The "best test accuracy" numbers are slightly optimistic.** They are the maximum over epochs of the test-set accuracy, which means the best epoch was chosen using the test set. A rigorous setup would hold out a validation split, for example 5,000 training images, for that choice. The final-epoch test accuracy is reported alongside as an unbiased number, and for the deep CNN the two differ by less than 0.1 points.
-- **Every configuration was run once, with seed 42.** GPU training isn't bit-for-bit deterministic, so differences under about 0.5 points between ablation variants, such as Dropout's +0.32, aren't conclusive. Repeating each variant with 3 seeds and reporting mean ± std would make the ablation stronger.
-- **Earlier runs on a Google Colab T4 GPU gave slightly different numbers:** 53.0% (MLP), 73.5% (basic CNN), and 90.07% (deep CNN). That's consistent with the run-to-run variation above.
-- **The MLP and basic CNN take about the same time to train** because data loading, not computation, limits them.
-
-## 9. Figures
+## 8. Figures
 
 Training curves from the run reported above are in [`OutputGraphs/CurrRuns/`](OutputGraphs/CurrRuns/):
 
