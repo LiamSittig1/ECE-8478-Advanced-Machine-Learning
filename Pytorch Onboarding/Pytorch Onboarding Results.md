@@ -191,13 +191,6 @@ The components fall into two groups:
 | MLP | 1,707,274 | 10 | 53.11% | 52.91% | 67.68% | +14.8 | 40 s |
 | Basic CNN | 1,070,794 | 10 | 73.64% | 71.51% | 96.83% | +25.3 | 41 s |
 | Deep CNN (final, no Dropout) | 3,249,098 | 30 | **90.71%** | **90.71%** | 97.82% | +7.1 | 181 s |
-
-**Key takeaways**
-- **Architecture matters more than size.** The basic CNN has fewer parameters than the MLP but scores 20.5 points higher, because convolutions build in useful assumptions about images: local patterns, and the same pattern can appear anywhere.
-- **Capacity without regularization overfits.** Both 10-epoch models stop improving after 4–7 epochs, and their test loss rises while training accuracy keeps climbing.
-- **The deep CNN reached about 91%.** It combines more capacity (depth with BatchNorm) with regularization (data augmentation) and a decaying learning rate. Those additions also let it benefit from three times as many epochs without overfitting.
-- **Experiments can simplify the model.** The ablation showed Dropout added nothing on top of the other improvements, so it was removed. The final model is simpler and slightly more accurate.
-
 ---
 
 ## 8. Figures
